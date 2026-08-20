@@ -7,7 +7,7 @@ public class Main
         
         while(a != 0)
         {
-            d = a % 10; // Removed "int" since d is already declared above
+            d = a % 10; 
             if(d % 2 == 0)
                 e++;
             else 
