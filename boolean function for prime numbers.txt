@@ -1,0 +1,26 @@
+public class Main {
+    public static void main(String[] args) {
+        boolean flag;
+        int d;
+        int m;
+
+        for (int i = 100; i < 999; i++) {
+            flag = true;
+            m = i;
+
+            while (m != 0) {
+                d = m % 10;
+
+                if (d != 7 && d != 5 && d != 3 && d != 2) {
+                    flag = false;
+                    break;
+                }
+
+                m = m / 10;
+            }
+
+            if (flag)
+                System.out.println(i);
+        }
+    }
+}
