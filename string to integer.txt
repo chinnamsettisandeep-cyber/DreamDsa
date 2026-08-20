@@ -1,0 +1,12 @@
+public class Main {
+    public static void main(String[] args) {
+
+        int a = 10;
+        int b = 20;
+
+        String a1 = Integer.toString(a);
+        String b1 = Integer.toString(b);
+
+        System.out.println(a1 + b1);
+    }
+}
