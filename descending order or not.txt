@@ -1,0 +1,23 @@
+public class Main {
+    public static void main(String[] args) {
+        int a = 987654;
+        int l, p;
+        boolean flag = true;
+
+        while ((a / 10) != 0) {
+            l = a % 10;
+            p = (a / 10) % 10;
+            if (l > p) {
+                flag = false;
+                break;
+            }
+            a /= 10;
+        }
+
+        if (flag) {
+            System.out.println("descending order");
+        } else {
+            System.out.println("not in descending order");
+        }
+    }
+}
